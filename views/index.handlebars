@@ -12,7 +12,7 @@
 		<ul class="list-group" id="burgerList">
 			{{#each burgers}}
 				{{#unless this.devoured}}
-				<li class="list-group-item">
+				<li class="list-group-item to-eat">
 					<p>{{this.burger_name}}
 					<button class="btn btn-danger float-right devour" data-id="{{this.id}}">Eat This Burger!</button></p>
 				</li>
@@ -35,7 +35,7 @@
 		<ul class="list-group">
 			{{#each burgers}}
 				{{#if this.devoured}}
-				<li class="list-group-item disabled">
+				<li class="list-group-item eated">
 					<p>{{this.burger_name}}</p><small class="float-right">Eaten: {{this.date}}</small>
 				</li>
 				{{/if}}

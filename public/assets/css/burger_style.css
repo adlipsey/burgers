@@ -14,14 +14,25 @@ p {
 	color: white;
 }
 
-li {
+.to-eat {
 	background: linear-gradient( rgba(126, 126, 126, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/bgBurger.jpg) center no-repeat;
 	background-size: 100%;
 	border: 4px;
 	margin: 5px 0px 5px 0px;
 }
 
-li:hover {
+.to-eat:hover {
 	background: url(../img/bgBurger.jpg) center no-repeat;
 	background-size: 100%;
+}
+
+.eated {
+	background: linear-gradient( rgba(126, 126, 126, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/eated.jpg) center no-repeat;
+	background-size: 100%;
+	border: 4px;
+	margin: 5px 0px 5px 0px;
+}
+
+small {
+	color: black;
 }
