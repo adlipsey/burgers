@@ -6,7 +6,7 @@ var orm = require("./config/orm.js");
 
 //Initiate app
 var app = express();
-var port = 3000;
+var port = process.env.PORT || 3000;
 
 //Set up app
 app.use(express.static("public"));

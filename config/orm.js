@@ -22,7 +22,6 @@ var orm = {
 	addNew: function(table, cols, vals, cb) {
     	var queryString = "";
     	queryString = "INSERT INTO " + table + " (" + cols.toString() + ") VALUES (" + printQuestionMarks(vals.length) + ") ";
-    	console.log(queryString);
     	connection.query(queryString, vals, function(err, data) {
       		if (err) throw err;
      		cb(data);
@@ -32,7 +31,6 @@ var orm = {
   	update: function(table, colsEqualVals, condition, cb) {
   		var queryString = "";
 	    queryString = "UPDATE " + table + " SET ?? = ?, ?? = ?" + " WHERE " + condition;
-	    console.log(queryString);
 	    connection.query(queryString, colsEqualVals, function(err, data) {
 	    	if (err) throw err;
 	    	cb(data);
