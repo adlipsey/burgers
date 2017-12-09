@@ -1,0 +1,27 @@
+{
+  "name": "burgers",
+  "version": "1.0.0",
+  "description": "An app that uses MySQL, Node, Express and Handlebars to list burgers from a db, allow users to add to db, and then the user can \"eat",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adlipsey/burgers.git"
+  },
+  "author": "Andrew L",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adlipsey/burgers/issues"
+  },
+  "homepage": "https://github.com/adlipsey/burgers#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.10",
+    "mysql": "^2.15.0"
+  }
+}

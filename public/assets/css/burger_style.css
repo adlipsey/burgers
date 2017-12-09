@@ -1,0 +1,27 @@
+#bigBurger {
+	width: 25%;
+	height: auto;
+}
+
+body {
+	background-color: orange;
+}
+
+p {
+	font-size: 1.5em;
+	font-weight: bold; 
+	font-style: italic; 
+	color: white;
+}
+
+li {
+	background: linear-gradient( rgba(126, 126, 126, 0.5), rgba(0, 0, 0, 0.5) ), url(../img/bgBurger.jpg) center no-repeat;
+	background-size: 100%;
+	border: 4px;
+	margin: 5px 0px 5px 0px;
+}
+
+li:hover {
+	background: url(../img/bgBurger.jpg) center no-repeat;
+	background-size: 100%;
+}
